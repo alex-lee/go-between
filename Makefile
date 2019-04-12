@@ -1,6 +1,6 @@
 # Makefile for go-between udp proxy
 
-.PHONY: all deps cmd test coverage
+.PHONY: all deps cmd racecmd test coverage
 
 all: cmd
 

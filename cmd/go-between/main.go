@@ -20,8 +20,8 @@ func init() {
 		err               error
 		frontStr, backStr string
 	)
-	flag.StringVar(&frontStr, "front", "127.0.0.1:8600", "listen address for UDP packets")
-	flag.StringVar(&backStr, "back", "10.15.8.3:8600", "remote address for UDP packets")
+	flag.StringVar(&frontStr, "front", "127.0.0.1:8053", "listen address for UDP packets")
+	flag.StringVar(&backStr, "back", "10.0.0.1:53", "remote address for UDP packets")
 	flag.Parse()
 
 	front, err = net.ResolveUDPAddr("udp", frontStr)
